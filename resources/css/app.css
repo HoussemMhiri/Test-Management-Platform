@@ -1,0 +1,43 @@
+:root {
+    --project-primary-color: #00B16E;
+    --project-primary-color-hover: #02a467;
+}
+
+.primary-text-color{
+    color:var(--project-primary-color)
+}
+
+.primary-bg-color{
+    background-color:var(--project-primary-color)
+}
+
+.d-flex{
+    display:flex !important;
+}
+
+.align-items-center{
+    align-items: center !important;
+}
+
+.justify-content-center{
+    justify-content: center !important;
+}
+
+.p-0{
+    padding:0 !important;
+}
+
+.fw-600{
+    font-weight: 600;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+
+.error-message{
+    color:red;
+    text-align:left;
+    width:100%;
+    font-size:12px;
+}

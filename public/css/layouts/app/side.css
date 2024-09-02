@@ -1,0 +1,108 @@
+.sidebar-menu .container {
+    margin: 0 auto !important;
+    padding: 20px !important;
+    background-color: #fff !important;
+    margin-top: 0px !important;
+}
+
+.sidebar-menu .header {
+    font-size: 24px !important;
+    font-weight: bold !important;
+    margin-bottom: 20px !important;
+}
+
+.sidebar-menu .image.logo {
+    width: 150px;
+    height: 100px;
+}
+
+.sidebar-menu .fa-plus {
+    margin-right: 10px !important;
+    color: #fff;
+}
+
+.sidebar-menu {
+    background-color: #fff;
+    height: 100vh;
+    border-right: 1px solid #e1e1e1;
+    padding: 10px !important;
+    padding-left: 20px !important;
+}
+
+.sidebar-menu .icon {
+    margin-right: 8px !important;
+    margin-left: 3px !important;
+}
+
+.sidebar-menu .premium-btn-container {
+    background-color: var(--project-primary-color);
+    border: 2px solid var(--project-primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 10px !important;
+    color: white;
+    cursor: pointer;
+}
+.sidebar-menu .premium-btn-container:hover {
+    border: 2px solid var(--project-primary-color);
+    background-color: white;
+    color: black;
+}
+
+.sidebar-menu .premium-btn-container:hover a {
+    color: var(--project-primary-color) !important;
+}
+
+.sidebar-menu .premium-btn-container:hover i {
+    color: var(--project-primary-color) !important;
+}
+
+.sidebar-menu .premium-btn-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-menu .side-menu {
+    margin-top: 30px !important;
+}
+
+.sidebar-menu .menu-item {
+    width: 100%;
+    padding: 15px !important;
+    display: flex !important;
+    justify-content: left !important;
+    align-items: center;
+    font-size: 16px;
+    color: black !important;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.sidebar-menu .menu-item a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.sidebar-menu .menu-item:hover {
+    background-color: #eee;
+}
+
+.sidebar-menu .active-menu-item {
+    background-color: #eee;
+    border-left: 4px solid var(--project-primary-color);
+}
+
+.sidebar-menu .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-menu .logo_newTest {
+    margin-bottom: 20px;
+}

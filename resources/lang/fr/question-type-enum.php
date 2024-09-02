@@ -1,0 +1,8 @@
+<?php
+return [
+    'CHOICES_SELECTION' => 'SÉLECTION DES CHOIX',
+    'CHOICES_ORDERING' => 'ORDRE DES CHOIX',
+    'TEXT' => 'TEXTE',
+    'ATTACHMENT' => 'PIÈCE JOINTE',
+    'OTHER' => 'AUTRE'
+];

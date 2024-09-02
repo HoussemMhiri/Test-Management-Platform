@@ -1,0 +1,155 @@
+/* Upper About */
+
+.about_container {
+    margin-top: 2rem;
+    height: auto;
+}
+
+.row_Cont {
+    margin: 0 auto;
+    margin-top: 5rem;
+    max-width: 1250px;
+}
+
+.img_logos {
+    position: relative;
+}
+.about_img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.logos {
+    position: absolute;
+    top: 7%;
+    left: 70%;
+}
+
+.logo2 {
+    width: 125px;
+    height: 131px;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 70%;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
+.logo1 {
+    top: -12%;
+    left: 16%;
+    width: 85px;
+    height: 85px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+}
+.logo1_img {
+    width: 50px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.about_right > * {
+    letter-spacing: 0.7px;
+}
+
+.first_p_about {
+    font-size: 22px;
+}
+
+.about_desc {
+    font-size: 40px;
+    line-height: 58px;
+    padding-right: 42%;
+}
+
+.bf_button {
+    font-size: 16px;
+    color: #52565b;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 2em 0;
+}
+
+.about_right button {
+    width: 163px;
+    height: 58px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--project-primary-color);
+    color: white;
+    font-size: 17px;
+}
+.about_right button:hover {
+    background-color: #212832;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Bottom About */
+.col {
+    border: 1px solid black;
+    height: 355px;
+    width: 370px !important;
+    margin: 0 1em;
+    border-radius: 10px;
+    border: 1px solid #dfdfdf;
+    padding: 30px;
+}
+.col:hover {
+    border: 1px solid #309255;
+    transition: all 0.3s ease-in-out;
+    .upper_col i {
+        color: white;
+        background-color: #00b16e;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.upper_col span {
+    font-size: 23px;
+}
+.upper_col {
+    margin: 1em;
+    width: 100%;
+}
+.upper_col i {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 28px;
+    color: #00b16e;
+    background-color: var(--project-secondary-color);
+    margin-right: 1em;
+}
+
+.col p {
+    font-size: 16px;
+    color: #52565b;
+    line-height: 28px;
+    margin-top: 2em;
+    letter-spacing: 0.6px;
+}
+
+@media (max-width: 768px) {
+    .about_desc {
+        padding: 0 !important;
+    }
+
+    .logos {
+        top: 5%;
+        left: 63%;
+    }
+
+    .about_container {
+        margin-top: 5rem;
+    }
+
+    .upper_about {
+        margin-bottom: 5rem !important;
+    }
+}

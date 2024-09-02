@@ -1,0 +1,79 @@
+.section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section,
+.main-wrapper {
+    float: left;
+    width: 100%;
+}
+
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-title .main-title {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+.section-title .sub-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--project-primary-color);
+    margin-bottom: 20px;
+}
+
+.btn {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.call-to-action-wrapper {
+    background-color: #EEFBF3;
+    border-radius: 10px;
+    padding: 20px 70px 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.call-to-action-btn {
+    text-align: right;
+}
+
+.section-title.shape-02 {
+    padding-bottom: 20px;
+    max-width: 415px;
+    margin-top: 25px;
+}
+
+.section-title .main-title span {
+    color: var(--project-primary-color);
+    position: relative;
+}
+
+.btn-primary {
+    background-color: var(--project-primary-color);
+    border-color: var(--project-primary-color);
+    color: #fff;
+}
+
+.call-to-action-btn .btn:hover {
+    background-color: black;
+    color: white;
+}
