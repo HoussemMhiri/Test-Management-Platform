@@ -1,64 +1,127 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Test Platform App
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This project is a comprehensive test platform built using Vue, Laravel, and MySQL. The platform allows hosts to create and manage tests, send invitations, track participant progress, and monitor test sessions in real-time. The app includes features such as authentication, real-time notifications, and an anti-cheat system.
 
-## About Laravel
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Authentication & Authorization
+- **Session-based Authentication:** Secure login for hosts and participants using Laravel Sanctum.
+- **Access Control:** Only authenticated users can manage or participate in tests.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Test & Session Management
+- **Create Tests:** Hosts can create, edit, delete, and print tests.
+- **Session Management:** Hosts can create test sessions and send invitations via email to participants.
+- **Real-Time Monitoring:** Hosts can see who is taking the test, monitor their progress, and view results in real-time.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Real-Time Notifications
+- **Pusher Integration:** Real-time notifications for participants when they accept or decline test invitations.
+- **Session Reminders:** Notifications sent 30 minutes before the start of the test session.
 
-## Learning Laravel
+### Participant Tracking
+- **Invitation Management:** Hosts can track how many participants accepted or declined the invitation.
+- **Attempt Monitoring:** Hosts can monitor attempts for each session and see how many participants passed or failed.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Anti-Cheat System
+- **Cursor Tracking:** Detect if a participant's cursor is out of the window for more than 2 seconds. After 3 instances, the participant is flagged as having cheated.
+- **Automatic Test Termination:** If the time runs out, the test is automatically terminated.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Results & Scoring
+- **Real-Time Scoring:** Monitor participants’ progress in real-time, including the number of questions answered and their scores.
+- **Pass/Fail/Cheat Status:** Real-time updates on whether participants passed, failed, or cheated during the test.
 
-## Laravel Sponsors
+## Tech Stack
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- **Vue.js:** Frontend framework for building the user interface.
+- **Laravel:** Backend framework for managing server-side logic and database operations.
+- **MySQL:** Relational database for storing test data and user information.
+- **Laravel Sanctum:** For session-based authentication.
+- **Pusher:** For real-time notifications and updates.
+- **Semantic UI:** For responsive and customizable UI components.
+- **PrimeVue:** UI component library for Vue.js with a wide range of rich UI elements.
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## Installation
 
-## Contributing
+### Prerequisites
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- PHP >= 7.4
+- Composer
+- MySQL
+- Node.js & npm
 
-## Code of Conduct
+### Setup
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. **Clone the repository:**
 
-## Security Vulnerabilities
+    ```bash
+    git clone https://github.com/HoussemMhiri/Test-Platform.git
+    ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+2. **Install PHP dependencies:**
 
-## License
+    ```bash
+    composer install
+    ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+3. **Install Node.js dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+4. **Set up environment variables:**
+
+    - Copy `.env.example` to `.env`.
+    - Configure your database settings and Pusher credentials in the `.env` file.
+
+    ```env
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=your_database
+    DB_USERNAME=your_username
+    DB_PASSWORD=your_password
+
+    PUSHER_APP_ID=your_pusher_app_id
+    PUSHER_APP_KEY=your_pusher_app_key
+    PUSHER_APP_SECRET=your_pusher_app_secret
+    PUSHER_APP_CLUSTER=your_pusher_app_cluster
+    ```
+
+5. **Generate the application key:**
+
+    ```bash
+    php artisan key:generate
+    ```
+
+6. **Run database migrations:**
+
+    ```bash
+    php artisan migrate
+    ```
+
+7. **Run the development server:**
+
+    ```bash
+    php artisan serve
+    ```
+
+8. **Compile assets:**
+
+    ```bash
+    npm run dev
+    ```
+
+9. **Access the app:** Open your browser and go to `http://localhost:8000`.
+
+## Usage
+
+- **Host:** Create and manage tests and sessions, send invitations, monitor participants, and track results.
+- **Participant:** Receive invitations, take tests, and receive real-time notifications.
+- **Anti-Cheat:** Ensures fair test-taking by detecting cursor movements and enforcing time limits.
+
+### Contributing
+Contributions are welcome! Please submit a pull request or open an issue to discuss your ideas.
+ 
+### Contact
+For any inquiries, feel free to reach out to me at houssemmhiri95@gmail.com.
