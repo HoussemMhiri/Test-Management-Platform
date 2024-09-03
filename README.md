@@ -5,7 +5,7 @@ This project is a comprehensive test platform built using Vue, Laravel, and MySQ
 ## Features
 
 ### Authentication & Authorization
-- **Session-based Authentication:** Secure login for hosts and participants using Laravel Sanctum.
+- **Token-based Authentication:** Secure login for hosts and participants using Laravel Sanctum.
 - **Access Control:** Only authenticated users can manage or participate in tests.
 
 ### Test & Session Management
@@ -34,7 +34,7 @@ This project is a comprehensive test platform built using Vue, Laravel, and MySQ
 - **Vue.js:** Frontend framework for building the user interface.
 - **Laravel:** Backend framework for managing server-side logic and database operations.
 - **MySQL:** Relational database for storing test data and user information.
-- **Laravel Sanctum:** For session-based authentication.
+- **Laravel Sanctum:** For Token-based authentication.
 - **Pusher:** For real-time notifications and updates.
 - **Semantic UI:** For responsive and customizable UI components.
 - **PrimeVue:** UI component library for Vue.js with a wide range of rich UI elements.
