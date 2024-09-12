@@ -1,6 +1,6 @@
 # Test Platform App
 
-This project is a comprehensive test platform built using Vue, Laravel, and MySQL. The platform allows hosts to create and manage tests, send invitations, track participant progress, and monitor test sessions in real-time. The app includes features such as authentication, real-time notifications, and an anti-cheat system.
+This project is a comprehensive test platform built using Vue, Laravel, and MySQL. The platform allows hosts to create and manage tests, send invitations, track participant progress, and monitor test sessions in real-time. It includes features such as authentication, real-time notifications, and an anti-cheat system. Additionally, participants can take tests on the platform, ensuring a smooth and interactive testing experience.
 
 ## Features
 
